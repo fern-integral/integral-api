@@ -35,7 +35,7 @@ services:
             type: ApiKey
           examples: 
             - request:
-                applicationUserForeignId: '123' 
+                applicationUserForeignId: 'my-id' 
                 description: My description
                 isSandbox: true 
               response:

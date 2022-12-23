@@ -1,7 +1,7 @@
 name: api
-auth: HeaderAuthentication
+auth: AuthHeader
 auth-schemes:
-  HeaderAuthentication: 
+  AuthHeader: 
     header: Authentication 
     type: string
 environments:

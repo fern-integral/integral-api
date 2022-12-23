@@ -15,7 +15,7 @@ services:
             name: GenereateApiKeyRequest 
             body:
               properties: 
-                applicationUserForeignIdRequired:
+                applicationUserForeignId:
                   docs: >
                     This is a unique index on your database to find users. 
                     This will allow us to know which API key associates to each user on your application's end.

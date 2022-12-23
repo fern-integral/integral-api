@@ -1,6 +1,10 @@
 name: api
-auth: bearer
+auth: HeaderAuthentication
+auth-schemes:
+  HeaderAuthentication: 
+    header: Authentication 
+    type: string
 environments:
-  Production: https://api.example.com
-  Sandbox: https://sandbox.example.com
+  Production: https://api.integralapi.co/public
+  Local: http://localhost:4000/
 default-environment: Production

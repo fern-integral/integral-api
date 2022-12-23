@@ -33,6 +33,29 @@ services:
           response: 
             docs: Returns the device model object if it exists.
             type: ApiKey
+          examples: 
+            - request:
+                applicationUserForeignId: '123' 
+                description: My description
+                isSandbox: true 
+              response:
+                body: 
+                  id: example
+                  createdAt: example
+                  updatedAt: example
+                  deletedAt: example
+                  apiKey: example
+                  isPaused: false 
+                  isRevoked: true 
+                  isRotatedOff: false 
+                  numOfRequest: 5  
+                  firstTimeRequest: example 
+                  applicationUser: 
+                    id: example
+                    createdAt: example
+                    updatedAt: example
+                    deletedAt: example
+                    applicationUserForeignId: example 
         
         revoke: 
           display-name: Revoke an API Key

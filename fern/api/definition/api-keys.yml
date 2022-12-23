@@ -25,11 +25,6 @@ services:
                   docs: > 
                     This is the description applied to an API key to identify it for a human. 
                     Use this to describe who the key belongs to, or why this key is relevant/exists.
-                isSandbox:
-                  docs: | 
-                    This value is a boolean to determine whether the key is for Sandbox use only or not. 
-                    If it is for sandbox use, it will not be able to access real data and will only be able to work with templated data.
-                  type: optional<boolean>
           response: 
             docs: Returns the device model object if it exists.
             type: ApiKey
@@ -37,7 +32,6 @@ services:
             - request:
                 applicationUserForeignId: 'my-id' 
                 description: My description
-                isSandbox: true 
               response:
                 body: 
                   id: example

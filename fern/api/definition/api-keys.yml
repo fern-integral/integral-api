@@ -6,7 +6,7 @@ services:
       endpoints:
         generate:
           display-name: Generate an API key
-          docs: | 
+          docs: > 
             This endpoint is used to generate an API key for a given user. 
             This API key is for the Application User it is assigned for only, and only for your API.
           path: /key/create
@@ -16,13 +16,13 @@ services:
             body:
               properties: 
                 applicationUserForeignIdRequired:
-                  docs: | 
+                  docs: >
                     This is a unique index on your database to find users. 
                     This will allow us to know which API key associates to each user on your application's end.
                   type: optional<string>
                 description: 
                   type: optional<string>
-                  docs: | 
+                  docs: > 
                     This is the description applied to an API key to identify it for a human. 
                     Use this to describe who the key belongs to, or why this key is relevant/exists.
                 isSandbox:

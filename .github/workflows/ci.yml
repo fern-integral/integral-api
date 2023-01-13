@@ -32,5 +32,6 @@ jobs:
       - name: Release Node.js SDK
         env:
           FERN_NPM_TOKEN: ${{ secrets.FERN_NPM_TOKEN }}
+          FERN_TOKEN: ${{ secrets.FERN_TOKEN }}
         run: fern generate --group external --version ${{ github.ref_name }} --log-level debug
         
